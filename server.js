@@ -4,6 +4,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var sql = require('mssql');
 var GeoJSON = require('geojson');
+const PORT = process.env.PORT | 1000;
 
 app.use(bodyParser.json());
 app.use(express.json())
